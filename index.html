@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sale Table</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div id="content">
+            <h2>Sale Form</h2>
+            <div id="inputs">
+                <div class="form-control">
+                    <div class="input-title">Barcode#</div>
+                    <input class="form-input" type="text" id="barcode" pattern="{1,}" />
+                </div>
+                <div class="form-control">
+                    <div class="input-title">Product Name</div>
+                    <input class="form-input" type="text" id="name" pattern="{1,}" />
+                </div>
+                <div class="form-control">
+                    <div class="input-title">Qty</div>
+                    <input class="form-input" type="number" id="quantity" pattern="[0-9]{1,}" value="0" />
+                </div>
+                <div class="form-control">
+                    <div class="input-title">Price</div>
+                    <input class="form-input" type="number" id="price" pattern="[0-9]{1,}" />
+                </div>
+            </div>
+            <div class="add-btn-container">
+                <button class="add-button" id="add">Add</button>
+            </div>
+
+            <div id="sale">
+                <table id="sale-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Qty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+                <div id="total"></div>
+            </div>
+        </div>
+        <script src="./mycode.js"></script>
+    </body>
+</html>

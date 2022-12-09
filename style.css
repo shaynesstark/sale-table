@@ -1,0 +1,73 @@
+input:invalid {
+    border-color: red;
+}
+
+#content {
+    text-align: center;
+}
+
+#inputs {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control {
+    text-align: left;
+}
+
+.input-title {
+    margin-bottom: 2px;
+}
+
+.form-input {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+}
+
+.add-btn-container {
+    width: 70%;
+    margin: 16px auto 0;
+    text-align: left;
+}
+
+.add-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0;
+}
+
+#sale-table {
+    width: 70%;
+    text-align: left;
+    margin: 32px auto;
+    table-layout: fixed;
+    border: 2px solid #333;
+    border-collapse: collapse;
+}
+
+tr {
+    padding: 8px 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+td,
+th {
+    border: 1px solid #333;
+}
+
+.add-qty-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #ccc;
+}
